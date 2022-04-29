@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33FBD06628195FA100C3585C /* HelloBabaToddlerGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FBD06528195FA100C3585C /* HelloBabaToddlerGameApp.swift */; };
 		33FBD06828195FA100C3585C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FBD06728195FA100C3585C /* ContentView.swift */; };
 		33FBD06A28195FA200C3585C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FBD06928195FA200C3585C /* Assets.xcassets */; };
 		33FBD06D28195FA200C3585C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FBD06C28195FA200C3585C /* Preview Assets.xcassets */; };
+		33FBD074281963F100C3585C /* Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FBD073281963F100C3585C /* Toy.swift */; };
+		33FBD0762819644F00C3585C /* DragableToy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FBD0752819644F00C3585C /* DragableToy.swift */; };
+		33FBD07A281A5A7700C3585C /* ToyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FBD079281A5A7700C3585C /* ToyContainer.swift */; };
+		33FBD07C281A61C300C3585C /* ToyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FBD07B281A61C300C3585C /* ToyViewModel.swift */; };
+		33FBD082281AECF200C3585C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FBD081281AECF200C3585C /* LaunchScreen.storyboard */; };
+		33FBD084281AFC2A00C3585C /* HelloBabaToddlerGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FBD083281AFC2A00C3585C /* HelloBabaToddlerGameApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33FBD06228195FA100C3585C /* HelloBabaToddlerGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloBabaToddlerGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		33FBD06528195FA100C3585C /* HelloBabaToddlerGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloBabaToddlerGameApp.swift; sourceTree = "<group>"; };
 		33FBD06728195FA100C3585C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		33FBD06928195FA200C3585C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33FBD06C28195FA200C3585C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		33FBD073281963F100C3585C /* Toy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toy.swift; sourceTree = "<group>"; };
+		33FBD0752819644F00C3585C /* DragableToy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragableToy.swift; sourceTree = "<group>"; };
+		33FBD079281A5A7700C3585C /* ToyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyContainer.swift; sourceTree = "<group>"; };
+		33FBD07B281A61C300C3585C /* ToyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyViewModel.swift; sourceTree = "<group>"; };
+		33FBD081281AECF200C3585C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33FBD083281AFC2A00C3585C /* HelloBabaToddlerGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloBabaToddlerGameApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +61,15 @@
 		33FBD06428195FA100C3585C /* HelloBabaToddlerGame */ = {
 			isa = PBXGroup;
 			children = (
-				33FBD06528195FA100C3585C /* HelloBabaToddlerGameApp.swift */,
+				33FBD083281AFC2A00C3585C /* HelloBabaToddlerGameApp.swift */,
+				33FBD079281A5A7700C3585C /* ToyContainer.swift */,
+				33FBD081281AECF200C3585C /* LaunchScreen.storyboard */,
+				33FBD07B281A61C300C3585C /* ToyViewModel.swift */,
 				33FBD06728195FA100C3585C /* ContentView.swift */,
 				33FBD06928195FA200C3585C /* Assets.xcassets */,
 				33FBD06B28195FA200C3585C /* Preview Content */,
+				33FBD073281963F100C3585C /* Toy.swift */,
+				33FBD0752819644F00C3585C /* DragableToy.swift */,
 			);
 			path = HelloBabaToddlerGame;
 			sourceTree = "<group>";
@@ -125,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FBD082281AECF200C3585C /* LaunchScreen.storyboard in Resources */,
 				33FBD06D28195FA200C3585C /* Preview Assets.xcassets in Resources */,
 				33FBD06A28195FA200C3585C /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FBD084281AFC2A00C3585C /* HelloBabaToddlerGameApp.swift in Sources */,
+				33FBD07A281A5A7700C3585C /* ToyContainer.swift in Sources */,
+				33FBD074281963F100C3585C /* Toy.swift in Sources */,
 				33FBD06828195FA100C3585C /* ContentView.swift in Sources */,
-				33FBD06628195FA100C3585C /* HelloBabaToddlerGameApp.swift in Sources */,
+				33FBD07C281A61C300C3585C /* ToyViewModel.swift in Sources */,
+				33FBD0762819644F00C3585C /* DragableToy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +290,11 @@
 				DEVELOPMENT_TEAM = 8CKV7N92SQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -281,10 +303,10 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.code.HelloBabaToddlerGame;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HelloBabaToddlerGame;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -299,9 +321,11 @@
 				DEVELOPMENT_TEAM = 8CKV7N92SQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,10 +334,10 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.code.HelloBabaToddlerGame;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HelloBabaToddlerGame;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
